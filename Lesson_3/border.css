@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+.par1 {
+  border: 2px solid red;
+  text-align: center;
+}
+
+.par2 {
+  border-width: 5px;
+  border-style: dotted;
+  border-color: blue;
+}
+
+.par3 {
+  border: 5px double magenta;
+}
+
+.par4 {
+  border: 10px dashed orangered;
+}
+
+.par5 {
+  border: 5px outset olive;
+  width: 450px;
+  text-align: center;
+  margin: auto;
+}

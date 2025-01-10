@@ -1,0 +1,44 @@
+.container {
+  border: 2px solid green;
+  width: 25rem;
+  height: 25rem;
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+  color: black;
+  text-shadow: 3px 3px 2px magenta;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: scroll;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  background-image: url(./img/Daisy.png);
+  /* background: no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+
+.container::-webkit-scrollbar {
+  /* width: 0; */
+  display: none;
+  /* visibility: hidden; */
+}
+
+.container2 {
+  border: 2px solid magenta;
+  width: 25rem;
+  height: 15rem;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: linear-gradient(to right, magenta, red, blue);
+  border-radius: 10px;
+  box-shadow: 7px 7px 5px green;
+  overflow: scroll;
+}
+
+.container2::-webkit-scrollbar {
+  display: none;
+}
