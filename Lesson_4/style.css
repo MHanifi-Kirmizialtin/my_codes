@@ -36,13 +36,19 @@ ul.languages li {
   border-left: 10px solid gray;
 }
 
+ul.languages li::before {
+  content: "\00024";
+  margin-left: 5px;
+  padding-right: 10px;
+}
+
 h2 {
   color: midnightblue;
   font-size: 2rem;
   padding-left: 45px;
 }
 h2 i {
-  color: magenta;
+  color: darkcyan;
 }
 
 ul.languages li:hover {
@@ -73,14 +79,16 @@ ul.pseudo_class li:nth-child(odd) {
   background-color: pink;
   border: 2px solid black;
   width: 15rem;
-  border-radius: 5px;
+  border-radius: 7px;
+  padding: 7px;
 }
 
 ul.pseudo_class li:nth-child(even) {
   background-color: fuchsia;
   border: 2px solid darkcyan;
   width: 15rem;
-  border-radius: 5px;
+  border-radius: 7px;
+  padding: 7px;
 }
 
 ul.pseudo_class li:hover {
@@ -117,4 +125,52 @@ nav.link a:hover {
 
 nav.cw a {
   text-decoration: none;
+  border: 2px solid darkslateblue;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+  color: black;
+  background-color: darkgray;
+}
+
+nav.cw a:hover {
+  background-color: aquamarine;
+}
+
+nav.cw a:hover i {
+  color: red;
+}
+
+/*! LINK PSEUDO ELEMENTS */
+.pseudo_elements::first-line {
+  color: red;
+}
+
+.pseudo_elements::first-letter {
+  font-size: 2rem;
+  font-weight: 500;
+  /* font-family: "Times New Roman", Times, serif; */
+}
+
+ul.before_after {
+  list-style-type: none;
+}
+
+ul.before_after li {
+  background-color: burlywood;
+  margin: 0.5rem;
+  width: 30%;
+  border: 2px solid black;
+  /* border-radius: 10px; */
+  /* padding-left: 25px; */
+  /* text-align: center; */
+}
+
+ul.before_after li::before {
+  content: "🚗";
+  margin: 10px;
+}
+
+ul.before_after li::after {
+  content: "🚓";
 }
