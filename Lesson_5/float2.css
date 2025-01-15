@@ -1,0 +1,46 @@
+.container {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+.container * {
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: bisque;
+  margin-top: 10px;
+}
+main {
+  background-color: lightblue;
+  padding: 10px;
+  /* border: none; */
+}
+aside {
+  background-color: mediumorchid;
+  height: 300px;
+  width: 25%;
+  float: left;
+  margin-left: 10px;
+  /* margin-top: 10px; */ */
+}
+article {
+  background-color: aqua;
+  height: 300px;
+  width: 70%;
+  float: left;
+}
+/* .clear {
+  clear: both;
+  border: none;
+} */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+footer {
+  background-color: lightcoral;
+}
