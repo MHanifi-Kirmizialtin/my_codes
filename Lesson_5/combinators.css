@@ -1,0 +1,47 @@
+div p {
+  /* background-color: cadetblue; */
+}
+/* p + div { */
+  background-color: burlywood;
+}
+
+div > p {
+  /* background-color: cyan; */
+}
+
+div + p {
+  /* background-color: magenta; */
+}
+
+div ~ p {
+  background-color: deeppink;
+}
+ .vote{
+    border: 5px solid darkmagenta;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 3rem;
+ }
+ .vote:hover{
+    outline: 5px dashed darkred ;
+    outline-offset: 0.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+ }
+
+ .clarusway{
+    border: 5px solid red;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 20rem;
+    margin: 5% auto;
+    text-align: center;
+    outline: 5px solid blue;
+    outline-offset: 1rem;
+ }
