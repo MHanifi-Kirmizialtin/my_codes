@@ -9,19 +9,20 @@ body {
 ul {
   background-color: burlywood;
   list-style-type: none;
-  height: 50vh;
-  padding: 1rem;
+  height: 25vh;
+  padding: 1rem 0;
   display: flex;
-  /* flex-direction: row; */
-  flex-direction: column;
+  flex-direction: row;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  /* align-items: center; */
-  /* justify-content: flex-start; */
+  align-items: center;
+}
+ul * {
+  background-color: aquamarine;
 }
 ul li {
-  background-color: aquamarine;
   border: 2px solid navy;
   border-radius: 10px;
   padding: 1rem;
@@ -50,9 +51,76 @@ ul li {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .container * {
   background-color: coral;
   height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  border: 2px solid maroon;
+  border-radius: 10px;
+}
+
+header {
+  flex-basis: 100%;
+}
+footer {
+  flex-basis: 100%;
+}
+
+aside {
+  /* flex-basis: 20%; */
+  flex-grow: 1;
+}
+main {
+  /* flex-basis: 50%; */
+  flex-grow: 5;
+}
+article {
+  /* flex-basis: 20%; */
+  flex-grow: 1;
+}
+.shrink {
+  background-color: chocolate;
+  margin-top: 50px;
+  display: flex;
+  gap: 1rem;
+}
+
+.shrink * {
+  width: 200px;
+  height: 100px;
+  border: 2px solid darkolivegreen;
+  border-radius: 10px;
+}
+.box-1 {
+  background-color: aqua;
+  /* flex-grow: 1;
+  flex-shrink: 0; */
+  /* flex: 1 1 0; */
+  flex: 1 0 5rem;
+  background-image: url("https://picsum.photos/id/642/600/400");
+  background-size: contain;
+}
+
+.box-2 {
+  background-color: darkgray;
+  /* flex-grow: 1;
+  flex-shrink: 5; */
+  /* flex: 1 1 0; */
+  flex: 5;
+}
+
+.box-3 {
+  background-color: deeppink;
+  /* flex-grow: 1;
+  flex-shrink: 3; */
+  /* flex: 1 1 0; */
+  flex: 1;
 }
