@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap");
+
+@import "./themes.css";
+
+:root {
+  /* COLORS */
+  --white: #ececec;
+  --orange: rgba(255, 166, 0, 0.849);
+  --light: rgba(173, 216, 230, 0.858);
+  /* FONTS */
+  --ff-Belanosima: "Belanosima", serif;
+  /* RENK PALETI */
+  --green-1: #45c4b0;
+  --green-2: #9aeba3;
+  --green-3: #dafdba;
+}
+
+body {
+  background-color: var(--white);
+  /* font-family: "Belanosima", serif; */
+}
+h1 {
+  font-family: var(--ff-Belanosima);
+}
+.container {
+  border: 2px solid red;
+  width: 500px;
+  height: 300px;
+}
+.light {
+  background-color: var(--green-2);
+  width: 150px;
+  height: 150px;
+  font-family: var(--ff-Belanosima);
+}
+.dark {
+  background-color: var(--green-1);
+  width: 150px;
+  height: 150px;
+  font-family: var(--ff-Belanosima);
+}
+
+/*! DESKTOP-TABLET-PHONE  */
+
+@media screen and (max-width: 900px) {
+  .container {
+    background-color: bisque;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    background-color: lightcoral;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container {
+    background-color: mediumorchid;
+  }
+}
