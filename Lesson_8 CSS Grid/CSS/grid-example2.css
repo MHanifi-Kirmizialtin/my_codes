@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 250px 1fr 4fr 1fr;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  background-color: aquamarine;
+  grid-column: span 12;
+}
+header img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+nav {
+  background-color: burlywood;
+  grid-column: span 12;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  background-color: deeppink;
+  grid-column: span 3;
+  /* display: grid;
+  align-items: center;
+  justify-content: center; */
+
+  /* ! Grid çalışırken yazıyı resmin içine ortalamak için */
+  display: grid;
+  place-items: center;
+}
+main {
+  background-color: khaki;
+  grid-column: span 9;
+}
+footer {
+  background-color: mediumpurple;
+  grid-column: span 12;
+  display: flex;
+}
+.Liv {
+  background-color: red;
+  color: white;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.Ars {
+  background-color: yellow;
+  color: red;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
