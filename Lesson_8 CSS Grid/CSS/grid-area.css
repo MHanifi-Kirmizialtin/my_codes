@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 100px 300px 100px;
+  grid-template-rows: 100px 400px 100px;
+  grid-template-areas:
+    "header header header"
+    "sidebar main aside"
+    "footer footer footer";
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.Box {
+  background-color: burlywood;
+  border: 1px solid maroon;
+}
+.Box1 {
+  background-color: aquamarine;
+  grid-area: header;
+}
+.Box2 {
+  background-color: yellowgreen;
+  grid-area: sidebar;
+}
+.Box3 {
+  background-color: deeppink;
+  grid-area: aside;
+}
+.Box4 {
+  background-color: khaki;
+  grid-area: main;
+  background-image: url("https://picsum.photos/id/684/600/400");
+  background-size: cover;
+  background-position: center;
+}
+.Box5 {
+  background-color: salmon;
+  grid-area: footer;
+}

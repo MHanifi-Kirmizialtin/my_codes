@@ -67,10 +67,16 @@
   background-image: url("https://picsum.photos/id/318/600/400");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 .Box4 {
   background-color: yellow;
 
   /* ! grid-area "row-start/column-start/row-end/column-en" */
   grid-area: 2/2/3/5;
+}
+.slack {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
