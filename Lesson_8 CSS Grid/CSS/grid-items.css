@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* gap: 1rem; */
+}
+.Box {
+  border: 2px solid darkblue;
+  background-color: burlywood;
+  /* box-shadow: 5px 5px 5px black; */
+  /* border-radius: 10px; */
+}
+.Box:active {
+  box-shadow: 0 0 0 black;
+}
+.Box1 {
+  background-color: darkmagenta;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.Box2 {
+  background-color: darkgray;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  display: flex;
+  color: black;
+  font-size: 1.2rem;
+  /* border-color: red; */
+  align-items: center;
+  justify-content: center;
+}
+.Box3 {
+  background-color: lightpink;
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5; */
+  grid-column: 1/2;
+  grid-row: 2/5;
+}
+
+.Box18 {
+  /* background-color: orangered; */
+  grid-column: 5/6;
+  grid-row: 2/6;
+  background-image: url("https://picsum.photos/id/1067/600/400");
+  background-size: cover;
+  background-position: center;
+}
+.Box15 {
+  background-color: lightblue;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+/* ! Span İle kutu oluşturma. önce "column ve row" belirt ondan sonra kaç tane gideceksen sayısını belirt. */
+.Box7 {
+  /* background-color: moccasin; */
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 2;
+  background-image: url("https://picsum.photos/id/318/600/400");
+  background-size: cover;
+  background-position: center;
+}
+.Box4 {
+  background-color: yellow;
+
+  /* ! grid-area "row-start/column-start/row-end/column-en" */
+  grid-area: 2/2/3/5;
+}
