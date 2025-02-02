@@ -1,16 +1,23 @@
+body {
+  height: 200vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 h1 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .features {
   text-align: center;
   font-size: 2rem;
   margin: 2rem auto;
   width: 50vh;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* ---------------------------------- */
+/*  !            TRANSFORM             */
+/* ---------------------------------- */
 .features-1 {
   background-color: aquamarine;
   transform: rotateX(75deg);
@@ -25,10 +32,94 @@ p {
 }
 .features-4 {
   background-color: darkcyan;
+  transform: scaleX(1.5);
 }
 .features-5 {
   background-color: darkkhaki;
+  transform: scaleY(2);
 }
 .features-6 {
   background-color: lightpink;
+}
+.features-6:active {
+  background-color: lightpink;
+  transform: scale(2);
+}
+img {
+  transform: skewX(35deg);
+  transform: skewY(25deg);
+  /* transform: skew(30deg, 30deg); */
+}
+/* ---------------------------------- */
+/*     !    TRANSFORM TRANSLATE        */
+/* ---------------------------------- */
+.box {
+  background-color: aquamarine;
+  width: 75px;
+  height: 75px;
+  margin: 2rem;
+  text-align: center;
+}
+.x {
+  background-color: burlywood;
+  transform: translateX(50px);
+}
+.y {
+  background-color: cyan;
+  transform: translateY(25px);
+}
+.xy:active {
+  background-color: deeppink;
+  transform: translate(100px, 50px);
+  background-color: brown;
+}
+/* ---------------------------------- */
+/*            ! TRANSATION             */
+/* ---------------------------------- */
+.a {
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+}
+.a:active {
+  transform: translateX(250px);
+  width: 250px;
+  /* height: 250px; */
+}
+.b {
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  background-color: rgba(222, 184, 135, 0.671);
+}
+.b:active {
+  transform: translateY(125px);
+  height: 250px;
+}
+.ab {
+  transition-property: all;
+  transition-duration: 3s;
+  background-color: deeppink;
+}
+.ab:active {
+  transform: translate(150px, 50px);
+  background-color: crimson;
+  width: 200px;
+  height: 100px;
+}
+.btn-div {
+  text-align: center;
+}
+.btn {
+  background-color: cadetblue;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 200ms ease-in-out;
+}
+.btn:active {
+  background-color: brown;
+  color: white;
+  transform: scale(0.95);
 }
