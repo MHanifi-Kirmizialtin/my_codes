@@ -1,0 +1,34 @@
+h1 {
+  font-size: 3.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.features {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+  width: 50vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.features-1 {
+  background-color: aquamarine;
+  transform: rotateX(75deg);
+}
+.features-2 {
+  background-color: hotpink;
+  transform: rotateY(180deg);
+}
+.features-3 {
+  background-color: darksalmon;
+  transform: rotate(30deg);
+}
+.features-4 {
+  background-color: darkcyan;
+}
+.features-5 {
+  background-color: darkkhaki;
+}
+.features-6 {
+  background-color: lightpink;
+}
