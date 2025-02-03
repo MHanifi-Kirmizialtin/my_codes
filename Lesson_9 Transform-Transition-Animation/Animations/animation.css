@@ -1,0 +1,41 @@
+.outher {
+  background-color: darkmagenta;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+.inner {
+  background-color: burlywood;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px darkgray;
+  animation-name: movement;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  /* animation-direction: reverse; */
+  animation-direction: alternate;
+  /* animation-fill-mode: forwards; */
+  animation-fill-mode: both;
+
+  /*! Hepsini tek bir satırda belirtebiliriz!!! */
+
+  /* animation: movement 2s ease 1s infinite alternate both; */
+}
+@keyframes movement {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(100%);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
